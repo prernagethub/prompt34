@@ -10,7 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     /* font-family: '' poppins',sans-serif;\ */
-    overflow: hidden;
+    /* overflow: hidden; */
 
   }
 
@@ -24,17 +24,18 @@
   .container {
     padding: 10px 50px;
     position: relative;
-    width: 50%;
+    width: 40%;
+    height: 18vh;
     /* background: rgba(0,0,0,0.3); */
   }
 
   .container img {
     position: absolute;
-    height: 17vh;
+    height: 10vh;
     width: 37vh;
     /* border-radius: 50%; */
     /* z-index: 9; */
-    left: 43px;
+    left: 48px;
     /* top: 10px; */
     bottom: 95%;
     /* border: 3px solid red; */
@@ -55,11 +56,12 @@
     background-color: #00CFD7;
     box-shadow: 3px 3px 19px #00CFD7;
     color: white;
+    
 
   }
 
   .box1 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #000;
   }
 
@@ -70,7 +72,7 @@
   }
 
   .box2 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #000;
   }
 
@@ -81,7 +83,7 @@
   }
 
   .box3 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #000;
   }
 
@@ -94,7 +96,7 @@
   }
 
   .box4 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #000;
   }
 
@@ -104,18 +106,18 @@
   }
 
   .right-container {
-    left: 52%;
+    left: 60%;
   }
 
   .container i {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     right: -40px;
     top: 32px;
     z-index: 10;
-    font-size: 5rem;
+    font-size: 2rem;
     filter: drop-shadow(3px 3px 15px #ebece9);
     /* color: #72b70b; */
     animation: movedown 1s linear forwards;
@@ -151,7 +153,7 @@
   } */
 
   .right-container i {
-    left: -62px;
+    left: -85px;
   }
 
   .left-container i {
@@ -168,7 +170,7 @@
     left: 50%;
     margin-left: -3px;
     z-index: -1;
-    animation: moveline 6s linear forwards;
+    animation: moveline 2s linear forwards;
   }
 
   @keyframes moveline {
@@ -213,4 +215,37 @@
     border-bottom: 15px solid transparent;
     border-right: 15px solid #fff;
     left: -15px;
+  }
+
+  @media screen and(max-width:600px) {
+    .timeline{
+      margin: 50px auto;
+    }
+
+    .timeline::after{
+      left: 31px;
+    }
+
+    .container{
+      width: 100%;
+      padding-left: 80px;
+      padding-right: 25px;
+    }
+
+    .text-box{
+      font-size: 13px;
+
+    }
+
+    .text-box small{
+      margin-bottom: 10px;
+    }
+
+    .right-container{
+      left: 0;
+    }
+
+    .left-container i, .right-container i{
+      left: 10px;
+    }
   }
